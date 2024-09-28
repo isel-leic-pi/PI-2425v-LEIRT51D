@@ -26,7 +26,7 @@ console.log("31" + 2)
 console.log("31" - 2)
 console.log(typeof("31" - 2))
 
-const e = true || 10
+const e = b || 10
 
 console.log(e)
 
