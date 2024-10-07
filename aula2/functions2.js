@@ -14,6 +14,21 @@ const f3 = f1(222)
 f3(1)
 f3(2)
 
+Start F1
+End F1
+F2 - x - 1 y - 222
+F2 - x - 2 y - 222
+
+
+
+
+
+
+
+
+
+
+
 function x(m){
     return function(i){return i * m}
 }

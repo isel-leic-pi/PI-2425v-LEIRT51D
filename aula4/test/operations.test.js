@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {sum,div} from '../operations.js'
+import {sum,div,throwError} from '../operations.js'
 
 
 describe('Operations Test', () => {
@@ -10,5 +10,9 @@ describe('Operations Test', () => {
     
     it('6 / 2 to equal 3', () => {
         expect(div(6, 2)).to.equal(3);
+      });
+    
+    it('throw Error', () => {
+        expect(()=>throwError()).to.throw('Throw Error');
       });
 });
