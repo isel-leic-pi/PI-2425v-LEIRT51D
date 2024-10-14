@@ -1,0 +1,7 @@
+1 - Registar API-Football
+2 - Obter a chave da API
+3 - Obter do serviço a informação de todas as equipas da 1ªLiga na época 2020
+   https://-------/teams?league=94&season=2020
+4 - Guardar num ficheiro no formato JSON
+5 - Fazer uma função que recebe id da equipa e obtem informação da equipa do ficheiro
+    
