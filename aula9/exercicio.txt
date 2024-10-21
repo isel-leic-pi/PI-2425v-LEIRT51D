@@ -1,0 +1,8 @@
+- Implementar um serviço para gerir informação pessoal de estudantes (numero, nome, email)
+- Operações a implementar:
+    - Criar estudante
+    - Listar todos os estudantes
+    - Listar detalhe de um estudante por id
+    - Atualizar nome e email do estudante
+    - Remover estudante
+

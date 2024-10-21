@@ -1,0 +1,11 @@
+GET http://localhost:9000/students/1
+
+###
+
+POST http://localhost:9000/students
+Content-Type: application/json
+
+{
+    "name" : "Filipe",
+    "email" : "fff@mail.pt"
+}
