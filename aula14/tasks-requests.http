@@ -1,0 +1,18 @@
+ 
+GET http://localhost:8080/tasks
+Authorization: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+
+###
+
+GET http://localhost:8080/tasks/1
+Authorization: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+
+###
+
+POST http://localhost:8080/tasks
+Authorization: 3fa85f64-5717-4562-b3fc-2c963f66afa6
+Content-Type: application/json
+
+{
+    "text" : "study DAW"
+}
