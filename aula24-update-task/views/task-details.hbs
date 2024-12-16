@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Tasks Application</title>
+    </head>
+    <body>
+        <!-- Menu -->
+        <a href="/"> Home </a>
+        <a href="/tasks"> Tasks </a>
+
+        <ul>
+            <li>id : {{task.id}}</li>
+            <li>text : {{task.text}} </li>
+        </ul>   
+        <p><a href="{{task.id}}/update">Update</a></p>
+        <form method="POST" action="/tasks/1/delete">
+            <input type="submit" value="Delete">
+        </form>
+
+
+
+        <a href="https://www.isel.pt"> ISEL </a>
+
+
+    </body>
+</html>
