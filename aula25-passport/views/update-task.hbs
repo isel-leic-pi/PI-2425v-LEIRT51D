@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> Tasks Application</title>
+         <script type='text/javascript' src="/javascript/update-task.js"></script>
+    </head>
+    <body>
+        <!--- Menu --->
+        <a href="/"> Home </a> 
+        <a href="/tasks"> Tasks </a> 
+
+
+        <h1>Update Task</h1>
+        <p id = "message"></p>
+        <p> Identifier : <input id="task_id" type=text value="{{task.id}}" disabled > </p>
+        <p> Text : <input id="task_text" type=text value="{{task.text}}" > </p>
+        <p> <button id="btn_update"> Update </button></p>
+    </body>
+</html> 

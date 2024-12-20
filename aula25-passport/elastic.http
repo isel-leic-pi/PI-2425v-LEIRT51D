@@ -1,0 +1,121 @@
+DELETE http://localhost:9200/books
+
+###
+
+GET http://localhost:9200/books
+
+###
+
+PUT  http://localhost:9200/books
+
+###
+
+PUT http://localhost:9200/books/_doc/b1
+Content-Type: application/json
+
+{
+    "name" : "BOOK1",
+    "isbn" : 1
+}
+
+###
+
+GET http://localhost:9200/books/_doc/b1
+
+###
+
+POST http://localhost:9200/books/_doc
+Content-Type: application/json
+
+{
+    "name" : "BOOK2",
+    "isbn" : 2
+}
+
+
+###
+
+POST http://localhost:9200/books/_doc
+Content-Type: application/json
+
+{
+    "date" : "X",
+    "author" : "A1"
+}
+
+###
+
+GET http://localhost:9200/books/_doc/0yflL5MBodDD5MAnxV7S
+
+###
+
+GET http://localhost:9200/books/_search
+
+###
+
+GET http://localhost:9200/books/_search?q=name:"BOOK2"
+
+###
+
+DELETE http://localhost:9200/users
+
+###
+
+PUT http://localhost:9200/users
+
+###
+
+PUT http://localhost:9200/users/_doc/11
+Content-Type: application/json
+
+{
+    "userName" : "Filipe", 
+    "token" : "3fa85f64-5717-4562-b3fc-2c963f66afa6" 
+}
+
+###
+PUT http://localhost:9200/users/_doc/12
+Content-Type: application/json
+
+{
+    "userName" : "Joao", 
+    "token" : "3fa85f64-5717-4562-b3fc-2c963f66afa7" 
+}
+
+###
+
+GET http://localhost:9200/users/_search
+
+
+###
+
+DELETE http://localhost:9200/tasks
+
+###
+PUT http://localhost:9200/tasks
+
+###
+POST http://localhost:9200/tasks/_doc
+Content-Type: application/json
+
+{   
+    "text" : "task 1", 
+    "userId" : 11 
+} 
+
+###
+
+POST http://localhost:9200/tasks/_doc
+Content-Type: application/json
+
+{
+    "text" : "task 2",
+    "userId" : 12 
+}
+
+###
+
+GET http://localhost:9200/users/_search?q=token:"3fa85f64-5717-4562-b3fc-2c963f66afa6"
+
+
+###
